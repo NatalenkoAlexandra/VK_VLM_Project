@@ -1,0 +1,27 @@
+{
+  "project": "Дообучение русскоязычной vision-language модели на открытых данных VK",
+  "base_model": "Intel/llava-gemma-2b",
+  "training_dataset": "deepvk/LLaVA-Instruct-ru",
+  "benchmark": "deepvk/MMBench-ru",
+  "method": "LoRA, 4-bit NF4",
+  "pilot_train_examples": 20,
+  "additional_train_examples": 100,
+  "evaluation_examples": 100,
+  "baseline_correct": 42,
+  "baseline_accuracy": 0.42,
+  "finetuned_correct": 52,
+  "finetuned_accuracy": 0.52,
+  "improvement_percentage_points": 10.000000000000004,
+  "training_metrics": {
+    "additional_train_examples": 100,
+    "pilot_train_examples": 20,
+    "total_training_exposures": 120,
+    "epochs": 1,
+    "learning_rate": 0.0001,
+    "gradient_accumulation_steps": 4,
+    "initial_loss": 2.6740198135375977,
+    "final_loss": 2.1168100833892822,
+    "mean_loss": 2.2841672110557556
+  },
+  "created_at": "2026-07-16T11:53:48"
+}
